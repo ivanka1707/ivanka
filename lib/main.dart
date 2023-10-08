@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t1_2020130027/first_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,25 +20,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter Demo'),
         ),
-        body: const Main(),
+        body: const FirstPage(),
       ),
-    );
-  }
-}
-
-class Main extends StatelessWidget {
-  const Main({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisSize: MainAxisSize.max,
-      children: [
-        Text('Hello, '),
-        Text('World!'),
-      ],
     );
   }
 }
